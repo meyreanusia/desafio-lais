@@ -1,0 +1,518 @@
+@import "/src/variaveis";
+
+.container-footer {
+  box-sizing: content-box;
+  background-color: $cor-secundaria;
+  // position: absolute;
+  bottom: 0;
+  height: 40vh;
+  // width: 100vw;
+
+  .footer-realizacoes {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $cor-primaria;
+    padding-top: 3rem;
+    height: 35%;
+
+    small {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: white;
+      font-family: $font-family;
+    }
+
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1rem;
+      gap: 3rem;
+
+      img {
+        max-width: 16rem;
+        margin: 20px;
+      }
+    }
+  }
+  .footer-links {
+    box-sizing: border-box;
+    background-color: $cor-secundaria;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 6rem;
+    height: 50%;
+
+    .link-lais {
+      box-sizing: border-box;
+      width: 10%;
+      height: 90%;
+
+      display: flex;
+      flex-direction: column;
+      img {
+        margin: 20px 0px;
+        max-width: 90px;
+      }
+      p {
+        color: $ff-color-secondaria;
+        font-family: $font-family;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: start;
+      }
+    }
+    .link-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      color: $ff-color-secondaria;
+      width: 15%;
+      height: 90%;
+      small {
+        font-size: 1.9rem;
+        font-weight: 600;
+        line-height: 35px;
+        font-weight: 600;
+        color: $ff-color-secondaria;
+        font-family: $font-family;
+      }
+      a {
+        text-decoration: none;
+        color: $ff-color-secondaria;
+        font-family: $font-family;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 20px;
+      }
+    }
+
+    .link-redes {
+      display: flex;
+      flex-direction: column;
+      width: 10.8%;
+      height: 90%;
+
+      small {
+        font-size: 1.9rem;
+        font-weight: 600;
+        line-height: 35px;
+        font-weight: 600;
+        color: $ff-color-secondaria;
+        font-family: $font-family;
+      }
+      div {
+        margin-top: 20px;
+        display: flex;
+        // justify-content: space-between;
+        gap: 4rem;
+      }
+    }
+  }
+
+  .direitos-autorais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #424146;
+    height: 15%;
+    color: $ff-color-secondaria;
+    font-size: 1rem;
+  }
+}
+
+//smartPhone
+@media (min-width: 320px) {
+  .container-footer {
+    height: 40vh;
+
+    width: 100vw;
+
+    .footer-realizacoes {
+      height: 35%;
+      small {
+        padding-top: 0.5rem;
+        font-size: 1rem;
+        font-weight: 600;
+        color: white;
+      }
+      div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+        padding-bottom: 1rem;
+
+        img {
+          max-width: 7rem;
+          margin: 20px;
+        }
+      }
+    }
+    .footer-links {
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: space-around;
+      padding: 2rem 2rem;
+      height: 50%;
+
+      .link-lais {
+        box-sizing: border-box;
+        width: 30%;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        img {
+          margin: 0;
+          max-width: 40px;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 0.7em;
+          line-height: 10px;
+          margin-bottom: 0;
+        }
+      }
+      .link-menu {
+        width: 30%;
+        height: 100%;
+
+        small {
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 10px;
+          margin-bottom: 1rem;
+        }
+        a {
+          text-decoration: none;
+          color: $ff-color-secondaria;
+          font-family: $font-family;
+          font-weight: 400;
+          font-size: 0.7rem;
+          line-height: 10px;
+        }
+      }
+
+      .link-redes {
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+        gap: 0;
+        width: 35%;
+        height: 100%;
+        small {
+          align-self: flex-start;
+          font-size: 1rem;
+          line-height: 10px;
+          font-weight: 600;
+        }
+        div {
+          box-sizing: content-box;
+          width: 70%;
+          margin-top: 1rem;
+          display: flex;
+          justify-content: center;
+        }
+        a {
+          img {
+            width: 8px;
+            height: 8px;
+          }
+        }
+      }
+    }
+
+    .direitos-autorais {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #424146;
+      height: 15%;
+      color: $ff-color-secondaria;
+      font-size: 0.8rem;
+    }
+  }
+}
+
+//smartPhone and tablet
+@media (min-width: 481px) {
+  .container-footer {
+    height: 40vh;
+
+    .footer-realizacoes {
+      small {
+        font-size: 1rem;
+      }
+      div {
+        img {
+          max-width: 8rem;
+        }
+      }
+    }
+    .footer-links {
+      box-sizing: border-box;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+
+      .link-lais {
+        box-sizing: border-box;
+        width: 20%;
+        img {
+          margin: 0;
+          max-width: 40px;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-size: 0.9em;
+          line-height: 10px;
+        }
+      }
+      .link-menu {
+        width: 20%;
+        height: 100%;
+        a {
+          font-size: 0.9rem;
+        }
+      }
+
+      .link-redes {
+        align-items: first baseline;
+        width: 20%;
+        height: 100%;
+        a {
+          img {
+            // width: 0.8rem;
+            height: 0.8rem;
+          }
+        }
+      }
+    }
+
+    .direitos-autorais {
+      font-size: 0.9rem;
+    }
+  }
+}
+
+//Larger tablet, laptops and smalldesktops
+@media (min-width: 769px) {
+  .container-footer {
+    height: 40vh;
+    width: 100%;
+    .footer-realizacoes {
+      height: 35%;
+      small {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+      }
+      div {
+        width: 100%;
+        gap: 4rem;
+
+        img {
+          max-width: 10rem;
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .footer-links {
+      justify-content: center;
+      align-items: start;
+      padding: 0rem 6rem;
+      height: 50%;
+
+      .link-lais {
+        box-sizing: border-box;
+        width: 30%;
+        img {
+          margin: 20px 0px;
+          max-width: 70px;
+        }
+        p {
+          font-size: 1rem;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: start;
+        }
+      }
+      .link-menu {
+        width: 30%;
+        height: 90%;
+        small {
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 35px;
+          font-weight: 600;
+          color: $ff-color-secondaria;
+          font-family: $font-family;
+        }
+        a {
+          text-decoration: none;
+          color: $ff-color-secondaria;
+          font-family: $font-family;
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 13px;
+        }
+      }
+
+      .link-redes {
+        display: flex;
+        flex-direction: column;
+        width: 15%;
+        height: 90%;
+
+        small {
+          font-size: 1.5rem;
+          font-weight: 600;
+          line-height: 35px;
+          font-weight: 600;
+          color: $ff-color-secondaria;
+          font-family: $font-family;
+        }
+        div {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          gap: 4rem;
+
+          a {
+            img {
+              width: 1.1rem;
+              height: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .direitos-autorais {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #424146;
+      height: 15%;
+      color: $ff-color-secondaria;
+      font-size: 1rem;
+    }
+  }
+}
+
+// Larger desktopsand monitors
+@media (min-width: 1280px) {
+  .container-footer {
+    height: 40vh;
+    width: 100%;
+    .footer-realizacoes {
+      height: 35%;
+      small {
+        font-size: 1.5rem;
+        margin-top: 2rem
+      }
+      div {
+        width: 100%;
+        gap: 4rem;
+
+        img {
+          max-width: 11rem;
+          margin-bottom: 40px;
+        }
+      }
+    }
+    .footer-links {
+      justify-content: center;
+      align-items: center;
+      padding: 0rem 6rem;
+      height: 50%;
+
+      .link-lais {
+        box-sizing: border-box;
+        width: 20%;
+        height: 90%;
+
+        display: flex;
+        flex-direction: column;
+        img {
+          margin: 10px 0px;
+          max-width: 80px;
+        }
+        p {
+          color: $ff-color-secondaria;
+          font-family: $font-family;
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 20px;
+          text-align: start;
+        }
+      }
+      .link-menu {
+        display: flex;
+        flex-direction: column;
+        color: $ff-color-secondaria;
+        width: 20%;
+        height: 90%;
+        small {
+          font-size: 1.9rem;
+          font-weight: 600;
+          line-height: 35px;
+          font-weight: 600;
+          color: $ff-color-secondaria;
+          font-family: $font-family;
+        }
+        a {
+          font-weight: 400;
+          font-size: 1rem;
+          line-height: 13px;
+        }
+      }
+
+      .link-redes {
+        display: flex;
+        flex-direction: column;
+        width: 10%;
+        height: 90%;
+
+        small {
+          font-size: 1.9rem;
+          font-weight: 600;
+          line-height: 35px;
+          font-weight: 600;
+
+        }
+        div {
+          margin-top: 10px;
+          display: flex;
+          justify-content: space-between;
+          gap: 4rem;
+
+          a {
+            right: 1rem;
+            img {
+              width: 1.3rem;
+              height: 1rem;
+            }
+          }
+        }
+      }
+    }
+
+    .direitos-autorais {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #424146;
+      height: 15%;
+      color: $ff-color-secondaria;
+      font-size: 1.5rem;
+    }
+  }
+}

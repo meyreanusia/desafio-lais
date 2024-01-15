@@ -1,0 +1,59 @@
+@import 'src/variaveis';
+
+button{
+    font-family: $font-family;
+    padding: 0.1rem;
+    font-size: 1rem;
+    color: #707070;
+    font-weight: 600;
+    background-color: transparent;
+    border: solid 1px $btt-color;
+    border-radius: 20px;
+}
+
+button.btt-primario{
+    
+    background-color: $btt-color;
+    color: $ff-color-secondaria;
+}
+
+@media (min-width:481px) {
+
+    button{
+        margin: 0;
+        padding: 0.8rem 0.8rem;
+        max-width: 70px;
+        font-size: 0.8rem;
+        max-height: 20px;
+        text-align: center;
+    }
+    
+    button.btt-primario{
+        max-width: 80px;
+        max-height: 20px;
+    }
+}
+@media (min-width:769px) {
+
+    button{
+        padding: 0.2rem 1rem;
+        max-width: 90px;
+        font-size: 1.3rem;
+    }
+    
+    button.btt-primario{
+        max-width: 90px;
+    }
+}
+@media (min-width:1280px) {
+    button{
+        padding: 1rem 1rem;
+        min-width: 110px;
+        max-height: 40px;
+        font-size: 1.5rem;
+    }
+    
+    button.btt-primario{
+        max-height: 40px;
+    }
+}

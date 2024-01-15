@@ -1,0 +1,185 @@
+@import "../../variaveis.scss";
+.inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .carousel {
+    width: 100%;
+    margin-top: 4rem;
+
+    .carousel-item {
+      width: 100%;
+      img {
+        width: 100%;
+      }
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(82, 45, 45, 0.4);
+      }
+      .imgPrincipal {
+        width: 30%;
+      }
+
+      img:nth-child(2) {
+        width: 35%;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  .containerCategorias {
+    margin-top: 4rem;
+    box-sizing: content-box;
+    height: 40%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      font-family: $font-family;
+      color: $ff-color-terciaria;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: 1rem;
+      letter-spacing: 0em;
+      text-align: center;
+      margin: 1rem;
+    }
+    .container-btt {
+      width: 80%;
+      align-items: center;
+      margin: 2rem 0;
+      div {
+        display: flex;
+        gap: 2rem;
+        a {
+          color: $ff-color;
+          margin-top: 1rem;
+          font-size: 1.4rem;
+        }
+      }
+    }
+
+    .containerConteudo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 60vh;
+      width: 80%;
+
+      .cursoPrincipal {
+        margin-left: 4rem;
+      }
+    }
+
+    .bttVerMais {
+      width: 20%;
+      border-radius: 20px;
+      padding: 0.1rem 1.5rem;
+      margin: 3rem 0rem;
+      height: auto;
+      text-align: center;
+
+      font-size: 1.3rem;
+      font-weight: 600;
+
+      font-family: $font-family;
+      background-color: $ff-color-primaria;
+      color: $ff-color-secondaria;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media (min-width: 320px) {
+  .inicio {
+    margin-top: 1.2rem;
+    .carousel {
+      margin-top: 5rem;
+    }
+    .containerCategorias {
+      margin-bottom: 1rem;
+
+      h1 {
+        font-size: 1.2rem;
+      }
+      .container-btt {
+        div {
+          a {
+            font-size: 0.8rem;
+            margin-top: 0;
+          }
+        }
+      }
+      .bttVerMais {
+        font-size: 1rem;
+        height: 1.5rem;
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .inicio {
+    .containerCategorias {
+      margin-bottom: 1rem;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+      .container-btt {
+        div {
+          a {
+            font-size: 1.2rem;
+          }
+        }
+      }
+      .bttVerMais {
+        font-size: 1.2rem;
+        height: 1.8rem;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .inicio {
+    margin-top: 5rem;
+    .containerCategorias {
+      margin-bottom: 1.2rem;
+
+      h1 {
+        font-size: 1.8rem;
+      }
+      .container-btt {
+        div {
+          a {
+            font-size: 1.4rem;
+          }
+        }
+      }
+      .bttVerMais {
+        font-size: 1.4rem;
+        height: 2.5rem;
+        margin-top: 2.5rem;
+        width: 15%;
+      }
+    }
+  }
+}

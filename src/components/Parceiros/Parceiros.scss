@@ -1,0 +1,152 @@
+@import "../../variaveis.scss";
+.parceirosCard {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1rem;
+  h2 {
+    font-family: $font-family;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 37px;
+    letter-spacing: 0em;
+    color: $ff-color-terciaria;
+  }
+  .parceirosInicio {
+    width: 100%;
+    min-height: 110px;
+    background-color: rgba(245, 245, 247, 1);
+    border-radius: 20px;
+    margin-bottom: 5rem;
+    margin-top: 1rem;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0px;
+
+    div {
+      width: 20%;
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      strong {
+        font-family: $font-family;
+        font-size: 1.4rem;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+      p {
+        font-family: $font-family;
+        color: $ff-color-primaria;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1rem;
+        letter-spacing: 0em;
+        text-align: center;
+      }
+    }
+  }
+}
+@media (min-width: 320px){
+
+  .parceirosCard {
+    h2 {
+      font-size: 1.2rem;
+    }
+    .parceirosInicio {
+      min-height: 100px;
+      border-radius: 10px;
+      margin-bottom: 5rem;
+      margin-top: 0rem;
+  
+      display: flex;
+      gap: 1rem;
+      padding: 10px 0px;
+  
+      div {
+        align-items: start;
+        justify-content: start;
+        strong {
+          font-family: $font-family;
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 15px;
+          letter-spacing: 0em;
+          text-align: start;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          font-size: 0.7rem;
+          line-height: 0.6rem;
+          text-align: start;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 769px){
+  .parceirosCard {
+    h2 {
+      font-size: 1.5rem;
+    }
+    .parceirosInicio {
+      min-height: 100px;
+      border-radius: 20px;
+      gap: 1rem;
+      padding: 15px 0px;
+  
+      div {
+        strong {
+          font-size: 1.2rem;
+          line-height: 15px;
+          text-align: start;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          font-size: 1rem;
+          line-height: 1rem;
+
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 1228px){
+  .parceirosCard {
+    h2 {
+      font-size: 1.8rem;
+    }
+    .parceirosInicio {
+      min-height: 100px;
+      border-radius: 20px;
+      gap: 1rem;
+      padding: 15px 0px;
+  
+      div {
+        strong {
+          font-size: 1.5rem;
+          line-height: 18px;
+          text-align: start;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          font-size: 1.2rem;
+          line-height: 1.8rem;
+
+        }
+      }
+    }
+  }
+}

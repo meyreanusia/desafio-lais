@@ -1,0 +1,240 @@
+@import "src/variaveis";
+
+.cursoPrincipal {
+  width: 80%;
+  height: 11rem;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  background-color: rgba(245, 245, 247, 1);
+  border-radius: 20px;
+
+  .sectionUm {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 0.8rem;
+    .fotoCapa {
+      width: 35%;
+      height: 95%;
+      border-radius: 20px;
+      background-size: cover;
+      background-position: center;
+    }
+    .titulos {
+      width: 80%;
+      height: 80%;
+      p {
+        color: $ff-color;
+        font-family: $font-family;
+        font-size: 1rem;
+        font-weight: 600;
+        line-height: 1.5rem;
+      }
+      small {
+        color: $ff-menores-color;
+        font-family: $font-family;
+        font-size: 0.8rem;
+        font-weight: 600;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+  }
+  .sectionDois {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $ff-color;
+    small {
+      color: $ff-color;
+      font-family: $font-family;
+      margin-right: 2rem;
+    }
+    .inscritos,
+    .tempo {
+      width: 1.6rem;
+      margin-right: 0.5rem;
+    }
+    button {
+      font-family: $font-family;
+      height: 3rem;
+      font-size: 1rem;
+      background-color: $ff-color-primaria;
+      color: $ff-color-secondaria;
+    }
+  }
+}
+
+@media (min-width: 320px){
+  .cursoPrincipal {
+    height: 7rem;
+    border-radius: 10px;
+    .sectionUm {
+      width: 60%;
+      gap: 0.5rem;
+      padding: 0.3rem;
+      .fotoCapa {
+        width: 30%;
+        height: 90%;
+        border-radius: 10px;
+      }
+      .titulos {
+        padding: 0.5;
+        width: 70%;
+        height: 80%;
+        p {
+          font-size: 0.7rem;
+          font-weight: 50;
+          line-height: 0.7rem;
+          margin-bottom: 0;
+          text-align: start;
+
+        }
+        small {
+          font-size: 0.5rem;
+        }
+      }
+    }
+    .sectionDois {
+      width: 60%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $ff-color;
+      small {
+        margin-right: 0.5rem;
+        font-size: 0.6rem;
+      }
+      .inscritos,
+      .tempo {
+        width: 0.8rem;
+        margin-right: 0.2rem;
+      }
+      button {
+        height: 1.3rem;
+        font-size: 0.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+       
+      }
+    }
+  }
+}
+
+@media (min-width: 769px){
+  .cursoPrincipal {
+    height: 7rem;
+    border-radius: 10px;
+    .sectionUm {
+      .titulos {
+        padding: 0.5;
+        p {
+          font-size: 1rem;
+          line-height: 1.3rem;
+        }
+        small {
+          font-size: 0.7rem;
+        }
+      }
+    }
+    .sectionDois {
+      width: 60%;
+      height: 100%;
+ 
+      small {
+        margin-right: 2rem;
+        font-size: 1rem;
+        margin-left: 0.5rem;
+      }
+      .inscritos,
+      .tempo {
+        width: 1rem;
+        margin-right: 0.2rem;
+      }
+      button {
+        height: 1.5rem;
+        font-size: 0.8rem;
+       text-align: center;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px){
+  .cursoPrincipal {
+    width: 80%;
+    height: 11rem;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: rgba(245, 245, 247, 1);
+    border-radius: 20px;
+  
+    .sectionUm {
+      width: 40%;
+      height: 100%;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      padding: 0.8rem;
+      .fotoCapa {
+        width: 35%;
+        height: 95%;
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+      }
+      .titulos {
+        width: 80%;
+        height: 80%;
+        p {
+          color: $ff-color;
+          font-family: $font-family;
+          font-size: 1rem;
+          font-weight: 600;
+          line-height: 1.5rem;
+        }
+        small {
+          color: $ff-menores-color;
+          font-family: $font-family;
+          font-size: 0.8rem;
+          font-weight: 600;
+          line-height: 16px;
+          letter-spacing: 0em;
+          text-align: left;
+        }
+      }
+    }
+    .sectionDois {
+
+     
+      .inscritos,
+      .tempo {
+        width: 1.6rem;
+        margin-right: 0.5rem;
+      }
+      button {
+        font-family: $font-family;
+        height: 2.5rem;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: auto;
+      }
+    }
+  }
+
+}

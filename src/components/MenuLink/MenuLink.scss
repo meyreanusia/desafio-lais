@@ -1,0 +1,12 @@
+@import 'src/variaveis';
+
+a:first-child{
+    color: #707070;
+}
+a{
+    font-family: $font-family;
+    text-decoration: none;
+    color: $ff-color;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
